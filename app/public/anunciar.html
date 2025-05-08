@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anunciar Produto | Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Marketplace</h1>
+    <nav>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="postForm" class="anunciar-form">
+      <h2>Anunciar Produto</h2>
+      <input type="text" name="name" placeholder="Nome do produto" required>
+      <textarea name="description" placeholder="Descrição" required></textarea>
+      <input type="number" name="price" placeholder="Preço" step="0.01" required>
+      <select name="category" required>
+        <option value="">Selecione uma categoria</option>
+        <option value="roupas">Roupas</option>
+        <option value="eletronicos">Eletrônicos</option>
+        <option value="livros">Livros</option>
+      </select>
+      <div class="image-upload">
+        <label for="product-image">Adicionar Imagens</label>
+        <input type="file" id="product-image" multiple accept="image/*">
+      </div>
+      <button type="submit">Publicar Anúncio</button>
+    </form>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

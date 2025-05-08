@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho | Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Marketplace</h1>
+    <nav>
+      <a href="index.html">Continuar Comprando</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Seu Carrinho</h2>
+    <div class="cart-items">
+      <!-- Cart items would be loaded here -->
+      <div class="cart-item">
+        <img src="images/placeholder.png" alt="Produto">
+        <div class="item-details">
+          <h3>Nome do Produto</h3>
+          <div class="price">R$ 49,90</div>
+          <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <button class="remove-item">Remover</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-summary">
+      <h3>Resumo do Pedido</h3>
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <span>R$ 49,90</span>
+      </div>
+      <div class="shipping">
+        <span>Frete</span>
+        <span>R$ 10,00</span>
+      </div>
+      <div class="total">
+        <span>Total</span>
+        <span>R$ 59,90</span>
+      </div>
+      <button class="checkout">Finalizar Compra</button>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
