@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil | Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Marketplace</h1>
+    <nav>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
+
+  <main class="profile-page">
+    <div class="profile-header">
+      <div class="avatar">
+        <img src="images/avatar-placeholder.png" alt="Foto de perfil">
+        <button class="edit-avatar">Editar</button>
+      </div>
+      <h2>Nome do Usuário</h2>
+      <p>usuário@email.com</p>
+    </div>
+    
+    <div class="profile-tabs">
+      <button class="tab-button active" data-tab="meus-anuncios">Meus Anúncios</button>
+      <button class="tab-button" data-tab="minhas-compras">Minhas Compras</button>
+      <button class="tab-button" data-tab="configuracoes">Configurações</button>
+    </div>
+    
+    <div class="tab-content active" id="meus-anuncios">
+      <h3>Meus Anúncios</h3>
+      <div class="user-products">
+        <!-- User products would be loaded here -->
+        <div class="product">
+          <img src="images/placeholder.png" alt="Produto">
+          <div class="details">
+            <h4>Nome do Produto</h4>
+            <div class="price">R$ 49,90</div>
+            <div class="status">Ativo</div>
+            <button class="edit-product">Editar</button>
+          </div>
+        </div>
+      </div>
+      <a href="anunciar.html" class="new-product-button">+ Novo Anúncio</a>
+    </div>
+    
+    <div class="tab-content" id="minhas-compras">
+      <h3>Minhas Compras</h3>
+      <!-- Purchase history would be loaded here -->
+    </div>
+    
+    <div class="tab-content" id="configuracoes">
+      <h3>Configurações</h3>
+      <form class="settings-form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" value="Nome do Usuário">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" value="usuário@email.com">
+        
+        <label for="password">Alterar Senha</label>
+        <input type="password" id="password" placeholder="Nova senha">
+        
+        <button type="submit">Salvar Alterações</button>
+      </form>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

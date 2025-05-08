@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento | Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Marketplace</h1>
+    <nav>
+      <a href="carrinho.html">Voltar</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Finalizar Compra</h2>
+    <div class="checkout-container">
+      <div class="payment-methods">
+        <h3>Método de Pagamento</h3>
+        <div class="method selected">
+          <input type="radio" name="payment" id="credit-card" checked>
+          <label for="credit-card">Cartão de Crédito</label>
+        </div>
+        <div class="method">
+          <input type="radio" name="payment" id="pix">
+          <label for="pix">PIX</label>
+        </div>
+        <div class="method">
+          <input type="radio" name="payment" id="boleto">
+          <label for="boleto">Boleto</label>
+        </div>
+        
+        <div class="credit-card-form">
+          <h3>Dados do Cartão</h3>
+          <input type="text" placeholder="Número do Cartão" required>
+          <input type="text" placeholder="Nome no Cartão" required>
+          <div class="row">
+            <input type="text" placeholder="Validade (MM/AA)" required>
+            <input type="text" placeholder="CVV" required>
+          </div>
+        </div>
+      </div>
+      
+      <div class="order-summary">
+        <h3>Resumo do Pedido</h3>
+        <div class="summary-item">
+          <span>Produtos (1)</span>
+          <span>R$ 49,90</span>
+        </div>
+        <div class="summary-item">
+          <span>Frete</span>
+          <span>R$ 10,00</span>
+        </div>
+        <div class="summary-item total">
+          <span>Total</span>
+          <span>R$ 59,90</span>
+        </div>
+        <button class="confirm-payment">Confirmar Pagamento</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
