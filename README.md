@@ -1,7 +1,7 @@
 # Marketplace
-projeto para a faculdade
+<h1>projeto para a faculdade</h1>
 
-Stack:
-frontend: html, css e js
-backend: nodejs
-banco de dados: mongodb
+<h2>Stack:</h2>
+<h3>Frontend: html, css e js</h3>
+<h3>Backend: nodejs</h3>
+<h3>Banco de dados: mongodb</h3>
