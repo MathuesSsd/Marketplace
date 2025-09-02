@@ -1,8 +1,3 @@
-Trabalho: Modelagem de Negócios e Requisitos  
-Professor: Andre Luis 
-
-Link do código do site: https://github.com/MathuesSsd/Marketplace
-
 # **0\) visitante faz cadastro:**
 
 # sou um visitante e desejo fazer cadastro no site para que eu possa comprar e vender produtos
